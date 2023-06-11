@@ -1,0 +1,118 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic");
+@import url("https://fonts.googleapis.com/css?family=Roboto:100,100italic,300,300italic,regular,italic,500,500italic,700,700italic,900,900italic");
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    height: 100%;
+}
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.main {
+    background: linear-gradient(248.66deg,#48355b 0,#91bef3 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 200px;
+    padding-top: 50px;
+    
+}
+img{
+    width: 154px;
+    height: 100px;
+    @media (max-width: 768px){
+        width: 70px;
+        height: 70px;
+    }
+}
+.main__body {
+    margin-right: 200px;
+    margin-left: 200px;
+    background: #D9D9D9;
+    box-shadow: 20px 50px 100px rgba(0, 0, 0, 0.1);
+    padding: 50px 70px 94px 80px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 50px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 20px;
+
+   
+}
+@media (max-width: 768px){
+    .main__body{
+        padding: 10px 70px 94px 80px;
+        max-width: 400px;
+    }
+   
+}
+@media (max-width: 440px){
+    .main__body{
+        padding: 10px;
+        max-width: 400px;
+    }
+   
+}
+.main__text {
+    font-family: 'Poppins';
+    font-weight: 500;
+    font-size: 34px;
+    line-height: 81px;
+    letter-spacing: 0.01em;
+    color: #000000;
+    flex: 1 1 auto;
+  overflow-y: scroll;
+  max-height: 250px;
+   
+}
+@media (max-width: 768px){
+    .main__text{
+        font-size: 18px;
+        line-height: 41px;
+    }
+    
+}
+.main__author {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 42px;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: #000000;
+   
+}
+@media (max-width: 768px){
+    .main__author{
+        font-size: 20px;
+    }
+   
+}
+.main__button {
+    text-align: center;
+    font-family: 'Roboto';
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 42px;
+    color: #000000;
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(67,151,204,1) 37%, rgba(111,111,170,1) 55%, rgba(105,117,175,1) 67%, rgba(83,137,192,1) 74%, rgba(0,212,255,1) 100%);
+    width: 100%;
+    padding: 20px 0px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+.main__button:hover{
+    box-shadow: 10px 10px 5px 0px rgba(158,144,190,0.75);
+}
